@@ -12,7 +12,7 @@ class Home extends Component {
   state = {
     books: [],
     q: "",
-    message: "Search For A Book To Begin!"
+    message: "To Beging, Search For A Book!"
   };
 
   handleInputChange = event => {
@@ -32,7 +32,7 @@ class Home extends Component {
       .catch(() =>
         this.setState({
           books: [],
-          message: "No New Books Found, Try a Different Query"
+          message: "No New Books Found, Try Again"
         })
       );
   };
@@ -65,7 +65,7 @@ class Home extends Component {
               <h1 className="text-center">
                 <strong>(React) Google Books Search</strong>
               </h1>
-              <h2 className="text-center">Search for and Save Books of Interest.</h2>
+              <h2 className="text-center">Search for and Save Books.</h2>
             </Jumbotron>
           </Col>
           <Col size="md-12">
